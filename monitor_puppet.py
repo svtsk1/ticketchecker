@@ -18,7 +18,7 @@ IGNORE_TITLES = {
 
 
 def send_telegram(text: str):
-    api_url = f"https://telegram.org{BOT_TOKEN}/sendMessage"
+    api_url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     payload = {
         "chat_id": CHAT_ID,
         "text": text,
