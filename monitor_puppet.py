@@ -4,8 +4,8 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-BOT_TOKEN = os.environ["BOT_TOKEN"]
-CHAT_ID = os.environ["CHAT_ID"]
+BOT_TOKEN = os.environ["BOT_TOKEN"].strip()
+CHAT_ID = os.environ["CHAT_ID"].strip()
 URL = "https://puppet-minsk.by/afisha"
 STATE_FILE = "seen_january.json"
 
